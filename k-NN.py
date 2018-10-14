@@ -1,22 +1,16 @@
 # crediting dataschool.io tutorial "Machine learning in Python with scikit-learn" for which this code is influenced by
 
 """
-	Import all necessary libraries
+  k-nearest neighbors (KNN)
 """
 
+# Import all necessary libraries
 import numpy as np
 import sklearn.model_selection as ms
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
-# from helpers import  basicResults,makeTimingCurve
-# from sklearn.pipeline import Pipeline
-# from sklearn.preprocessing import StandardScaler
-
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.feature_selection import SelectFromModel
-import seaborn as sns 
+import seaborn as sns
 from sklearn import metrics
-# https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
 from sklearn.datasets import load_breast_cancer
 import matplotlib.pyplot as plt
 %matplotlib inline

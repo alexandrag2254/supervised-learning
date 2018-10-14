@@ -1,25 +1,24 @@
 """
-	Import all necessary libraries
+	Decision Tree
 """
+
+# Import all necessary libraries
 
 import os
 import numpy as np
 import sklearn.model_selection as ms
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
-
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_selection import SelectFromModel
 import seaborn as sns 
 from sklearn import metrics
-# https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
 from sklearn.datasets import load_breast_cancer
 import matplotlib.pyplot as plt
-
 from sklearn.tree import DecisionTreeClassifier
+
 tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train, y_train)
-
 
 cancer = load_breast_cancer()
 
